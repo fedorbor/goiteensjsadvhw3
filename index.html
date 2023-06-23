@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lazy Loading Images</title>
+  <style>
+    img {
+      height: 200px;
+      background-color: #f0f0f0;
+      transition: opacity 0.5s;
+    }
+    
+    .placeholder {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lazy Loading Images</h1>
+  <button onclick="loadImages()">Load Images</button>
+  <div class="image-container">
+    <img data-src="image1.jpg" alt="Image 1" class="placeholder">
+    <img data-src="image2.jpg" alt="Image 2" class="placeholder">
+    <img data-src="image3.jpg" alt="Image 3" class="placeholder">
+    <img data-src="image4.jpg" alt="Image 4" class="placeholder">
+  </div>
+
+  <script src="lazyload.js"></script>
+</body>
+</html>
